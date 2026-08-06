@@ -29,3 +29,8 @@ models:
                   - "EUROPE"
                   - "MIDDLE EAST"
                   - "ASIA"
+
+seeds:
+  - name: supplier_names
+    config: 
+      alias: real_suppliers

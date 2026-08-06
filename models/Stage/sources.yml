@@ -8,8 +8,11 @@ sources:
     tables:
       - name: customers
       - name: orders
+      - name: parts
+      - name: partsupps
       - name: nations
       - name: regions
+      - name: lineitems
 
       - name: suppliers
         config:

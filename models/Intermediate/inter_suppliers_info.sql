@@ -1,6 +1,9 @@
-{{ config(materialized='incremental', unique_key='supplier_id') }}
+{{ config(materialized='incremental', unique_key='supplier_id' , alias='int_Suppliers') }}
 {# if this (materialized='incremental') is not writen at the top then it will create a create statement, 
 but in this case it will create insert statement #}
+{#
+Use alias word when you want to give the name of the table different from the current .sql file
+#}
 
 with suppliers as (
     select 
